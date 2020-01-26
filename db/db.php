@@ -12,3 +12,14 @@ function connect()
         exit();
     }
 }
+
+function fetchAll($query)
+{
+    $db = connect();
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetchAll();
+    return $results;
+}
+
+
