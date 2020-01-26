@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    background-color: rgb(242, 237, 228);
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+hr {
+    width: 60px;
+    height: 1px;
+    margin-top: -8px;
+    background-color: white;
+}
+
+.wrapper{width: 1366px;}
+
+.header {
+    background-color: rgb(81, 99, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.navBar{
+    display: flex;
+}
+
+.loginLink{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100px;
+    text-decoration: none;
+    box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
+    background-color: #0D2C40;
+    color: white;
+
+}  .loginLink:hover{background-color:#1c5478 }
