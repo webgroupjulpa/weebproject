@@ -1,4 +1,5 @@
 <?php
+session_start();
 function connect()
 {
     try {
@@ -51,9 +52,10 @@ function login($data)
 {
     $username = $data["username"];
     $password = $data["password"];
-    $hashed = fetch("select password from login where username = '$username'");
+    $query = "select password from login where username = '$username'";
+    $hashed = fetch($query);
 
-    if (password_verify($password, $hashed["password"])== true) {
+    if (password_verify($password, $hashed["password"])=== true) {
         $_SESSION["loggedIn"] = true;
         header("Location:/");
     } else {

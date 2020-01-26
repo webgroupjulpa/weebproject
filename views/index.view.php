@@ -20,7 +20,9 @@
          <a class="loginLink" href="../controller/register.php"> Register </a>
          <a class="loginLink" href="../controller/login.php"> Login </a>
      </div>
+<?php
 
+if ($_SESSION["loggedIn"] == null or false){?>
         <form action="login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
@@ -28,8 +30,8 @@
             <input type="password" id="password" name="password">
             <input type="submit" value="Log In">
         </form>
-
-        <form action="../controller/storeUser.php" method="POST">
+<?php } ?>
+<form action="../controller/storeUser.php" method="POST">
             <input type="hidden" id="id" name="id">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
