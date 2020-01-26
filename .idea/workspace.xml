@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="ändrad">
+    <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,13 @@
       <option name="project" value="LOCAL" />
       <updated>1580053334752</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="ändrad">
+      <created>1580054314285</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1580054314285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -109,12 +116,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jag commitade" />
-    <option name="LAST_COMMIT_MESSAGE" value="jag commitade" />
+    <MESSAGE value="ändrad" />
+    <option name="LAST_COMMIT_MESSAGE" value="ändrad" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580054313582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054313582" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1580054074881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580054074881" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580054317198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054317198" />
   </component>
 </project>
