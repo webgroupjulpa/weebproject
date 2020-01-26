@@ -20,6 +20,7 @@
      <div class="navBar">
          <a class="loginLink" href="../controller/register.php"> Register </a>
          <a class="loginLink" href="../controller/login.php"> Login </a>
+         <a class="loginLink" href="../controller/logout.php"> Logout </a>
      </div>
     </div>
 <!------------------------HEADER end------------------------->
