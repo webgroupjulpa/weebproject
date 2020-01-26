@@ -139,17 +139,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="ändrad" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580054601156">
+    <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580065817698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054601156" />
+    <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580065817698" />
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580065794475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580065794475" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1580054074881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580054074881" />
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580054605381">
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580065798342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054605381" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580065798342" />
   </component>
 </project>
