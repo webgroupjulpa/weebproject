@@ -9,9 +9,7 @@
 </head>
 <body>
 <form action="../controller/storeUser.php" method="POST">
-
-
-    <input type="hidden" id="id" name="id">
+     <input type="hidden" id="id" name="id">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
     <label for="password">Password:</label>

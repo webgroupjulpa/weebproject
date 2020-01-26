@@ -14,15 +14,32 @@
     <div class="header">
      <h1>Zender</h1>
         <hr>
-     <h2>Zender - A forum for everybody</h2>
+     <h2>Zender - A forum for you</h2>
 
      <div class="navBar">
          <a class="loginLink" href="../controller/register.php"> Register </a>
          <a class="loginLink" href="../controller/login.php"> Login </a>
      </div>
 
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Log In">
+        </form>
+
+        <form action="../controller/storeUser.php" method="POST">
+            <input type="hidden" id="id" name="id">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="submit">
+        </form>
 
     </div>
 </div>
 </body>
 </html>
+
