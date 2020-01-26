@@ -52,7 +52,8 @@ function login($data)
     $username = $data["username"];
     $password = $data["password"];
     $hashed = fetch("select password from login where username = '$username'");
-    if (password_verify($password, $hashed)) {
+
+    if (password_verify($password, $hashed["password"])== true) {
         $_SESSION["loggedIn"] = true;
         header("Location:/");
     } else {
