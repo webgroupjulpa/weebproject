@@ -35,9 +35,9 @@ function fetch($query)
 function storeUser($data)
 {
     $result = fetch("select MAX(id) from login");
-    $id = $result["MAX(id)"]+1;
+    $id = $result["MAX(id)"] + 1;
     $username = $data["username"];
-    $password = $data["password"];
+    $password = password_hash($data["password"] ?? null, PASSWORD_DEFAULT);
     $query = "insert into login values(
                           $id,
                          '$username',
@@ -45,5 +45,18 @@ function storeUser($data)
     );";
     var_dump($query);
     return fetchAll($query);
+}
+
+function login($data)
+{
+    $username = $data["username"];
+    $password = $data["password"];
+    $hashed = fetch("select password from login where username = '$username'");
+    if (password_verify($password, $hashed)) {
+        $_SESSION["loggedIn"] = true;
+        header("Location:/");
+    } else {
+   echo "Wrong username or Password!";
+    }
 }
 
