@@ -8,7 +8,7 @@
     <title>Zender</title>
 </head>
 <body>
-<h1>Kul med hemsidor!</h1>
-<p>Hej</p>
+<h1>Zender</h1>
+<h2>Zender - A forum for everybody</h2>
 </body>
 </html>

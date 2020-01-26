@@ -36,12 +36,6 @@
         <item name="db.sqlite" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -65,6 +59,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\weebproject\db" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -99,7 +98,19 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1580054314285</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="ändrad">
+      <created>1580054601781</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1580054601781</updated>
+    </task>
+    <task id="LOCAL−00005" summary="&#10;ändrad">
+      <created>1580054766865</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1580054766865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -117,20 +128,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jag commitade" />
     <MESSAGE value="ändrad" />
-    <option name="LAST_COMMIT_MESSAGE" value="ändrad" />
+    <MESSAGE value="&#10;ändrad" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;ändrad" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580054601156">
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580054766180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054601156" />
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054766180" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1580054074881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580054074881" />
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580054605381">
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580054780745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054605381" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580054780745" />
   </component>
 </project>
