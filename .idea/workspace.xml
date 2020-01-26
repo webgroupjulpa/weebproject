@@ -15,6 +15,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,8 +57,15 @@
       <option name="presentableId" value="Default" />
       <updated>1580052485111</updated>
       <workItem from="1580052486398" duration="119000" />
-      <workItem from="1580052794857" duration="26000" />
+      <workItem from="1580052794857" duration="279000" />
     </task>
+    <task id="LOCAL−00001" summary="ändrad">
+      <created>1580052843523</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1580052843523</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -58,5 +79,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ändrad" />
+    <option name="LAST_COMMIT_MESSAGE" value="ändrad" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="186" y="32" key="CommitChangelistDialog2" timestamp="1580053101571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="186" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580053101571" />
   </component>
 </project>
