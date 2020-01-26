@@ -11,6 +11,7 @@
 <body>
 
 <div class="wrapper">
+<!------------------------HEADER start------------------------->
     <div class="header">
      <h1>Zender</h1>
         <hr>
@@ -20,10 +21,13 @@
          <a class="loginLink" href="../controller/register.php"> Register </a>
          <a class="loginLink" href="../controller/login.php"> Login </a>
      </div>
-<?php
+    </div>
+<!------------------------HEADER end------------------------->
 
+     <div class="userForm">
+<?php
 if ($_SESSION["loggedIn"] == null or false){?>
-        <form action="login.php" method="POST">
+        <form id="loginbox" action="login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
             <label for="password">Password:</label>
@@ -31,7 +35,7 @@ if ($_SESSION["loggedIn"] == null or false){?>
             <input type="submit" value="Log In">
         </form>
 <?php } ?>
-<form action="../controller/storeUser.php" method="POST">
+        <form id="registerbox" action="../controller/storeUser.php" method="POST">
             <input type="hidden" id="id" name="id">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username">
@@ -39,8 +43,7 @@ if ($_SESSION["loggedIn"] == null or false){?>
             <input type="password" id="password" name="password">
             <input type="submit" value="submit">
         </form>
-
-    </div>
+     </div>
 </div>
 </body>
 </html>

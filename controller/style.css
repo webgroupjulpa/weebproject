@@ -42,5 +42,26 @@ hr {
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
     background-color: #0D2C40;
     color: white;
-
 }  .loginLink:hover{background-color:#1c5478 }
+
+
+
+.userForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: #323f4a;
+}
+
+#loginbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#registerbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
