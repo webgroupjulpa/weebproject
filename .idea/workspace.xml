@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/controller/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1580052486398" duration="119000" />
       <workItem from="1580052794857" duration="26000" />
       <workItem from="1580066536212" duration="39000" />
-      <workItem from="1580235374632" duration="3699000" />
+      <workItem from="1580235374632" duration="5481000" />
     </task>
     <task id="LOCAL-00001" summary="jag commitade">
       <created>1580053201143</created>
@@ -133,7 +131,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1580239367813</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="ändrad">
+      <created>1580248616753</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1580248616753</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -158,10 +162,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580065817698" />
-    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580239367173">
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580248616159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580239367173" />
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580248616159" />
     <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1580130263390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,9 +178,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="18" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580068135567" />
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580239375766">
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580248619565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580239375766" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580248619565" />
   </component>
 </project>

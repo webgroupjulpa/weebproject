@@ -18,14 +18,14 @@
      <h2>Zender - A forum for you</h2>
 
      <div class="navBar">
-         <a class="userBtn"> Register </a>
+         <button class="userBtn"> Register </button>
 
          <?php if($_SESSION["loggedIn"] == false){ ?>
-         <a class="userBtn"> Login </a>
+         <button class="userBtn" > Login </button>
          <?php } ?>
 
          <?php if($_SESSION["loggedIn"] == true){ ?>
-         <a class="userBtn" href="../controller/logout.php"> Logout </a>
+             <button class="userBtn" onclick="window.location.href='../controller/logout.php'"> Logout </button>
          <?php } ?>
      </div>
     </div>
@@ -37,23 +37,25 @@
 <?php
 if ($_SESSION["loggedIn"] == false){?>
         <form id="loginbox" action="login.php" method="POST">
+            <h3>Log in</h3>
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input id="usrnBox" type="text" id="username" name="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="Log In">
+            <input id="pwBox" type="password" id="password" name="password" required>
+            <input id="submit" type="submit" value="Submit">
         </form>
 <?php } ?>
      </div>
      <div class="userForm">
 
         <form id="registerbox" action="../controller/storeUser.php" method="POST">
+            <h3>Register</h3>
             <input type="hidden" id="id" name="id">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input id="usrnBox" type="text" id="username" name="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="register">
+            <input id="pwBox" type="password" id="password" name="password" required>
+            <input id="submit" type="submit" value="Submit">
         </form>
      </div>
     </div>
