@@ -15,7 +15,7 @@
     <div class="header">
      <h1>Zender</h1>
         <hr>
-     <h2>Zender - A forum for you</h2>
+     <h2>Zender - Share your knowledge</h2>
 
      <div class="navBar">
          <!-- Login button  -->
