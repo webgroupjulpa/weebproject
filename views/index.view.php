@@ -15,7 +15,7 @@
     <div class="header">
      <h1>Zender</h1>
         <hr>
-     <h2>Zender - Send your knowledge</h2>
+     <h2>"Send your thoughts and knowledge"</h2>
 
      <div class="navBar">
          <!-- Login button  -->
