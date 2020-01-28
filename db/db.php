@@ -33,6 +33,12 @@ function fetch($query)
     return $results;
 }
 
+function runQuery($query)
+{
+    $db = connect();
+    $stmt = $db->prepare($query);
+    return $stmt->execute();
+}
 function storeUser($data)
 {
     $result = fetch("select MAX(id) from login");
@@ -63,4 +69,14 @@ function login($data)
    echo "Wrong username or Password!";
     }
 }
-
+function makePost($data){
+    $username = $_SESSION["username"];
+    $date = date("H:i d-m-Y")?? null;
+    $result = fetch("select MAX(id) from posts");
+    $description = $data["description"];
+    $content = $data["content"];
+    $id = $result["MAX(id)"] +1;
+    $query = "insert into posts values($id,'$description','$content',$date,$username);";
+    $success = runQuery($query);
+    return $success;
+}

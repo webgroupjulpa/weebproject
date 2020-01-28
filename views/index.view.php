@@ -27,6 +27,9 @@
          <?php if($_SESSION["loggedIn"] == true){ ?>
              <button class="userBtn" onclick="window.location.href='../controller/logout.php'"> Logout </button>
          <?php } ?>
+         <?php if($_SESSION["loggedIn"] == true){ ?>
+             <button class="userBtn" ><a href="newPost.php">New Post</a> </button>
+         <?php } ?>
      </div>
     </div>
 <!------------------------HEADER end------------------------->
