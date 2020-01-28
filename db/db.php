@@ -36,9 +36,7 @@ function fetch($query)
 function runQuery($query)
 {
     $db = connect();
-    var_dump($query);
     $stmt = $db->prepare($query);
-    var_dump($query);
     return $stmt->execute();
 }
 function storeUser($data)
@@ -52,7 +50,6 @@ function storeUser($data)
                          '$username',
                          '$password'
     );";
-    var_dump($query);
     return fetchAll($query);
 }
 
