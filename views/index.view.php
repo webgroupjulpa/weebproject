@@ -18,7 +18,11 @@
      <h2>Zender - A forum for you</h2>
 
      <div class="navBar">
+         <!-- Register button  -->
+         <?php if($_SESSION["loggedIn"] == false){ ?>
          <button class="userBtn"> Register </button>
+         <?php } ?>
+
          <!-- Login button  -->
          <?php if($_SESSION["loggedIn"] == false){ ?>
          <button class="userBtn" > Login </button>
@@ -50,10 +54,11 @@
             <input id="pwBox" type="password" id="password" name="password" required>
             <input id="submit" type="submit" value="Submit">
         </form>
-        <?php } ?>
      </div>
+        <?php } ?>
 
-
+        <?php
+        if ($_SESSION["loggedIn"] == false){?>
      <div class="userForm">
         <form id="registerbox" action="../controller/storeUser.php" method="POST">
             <h3>Register</h3>
@@ -65,8 +70,9 @@
             <input id="submit" type="submit" value="Submit">
         </form>
      </div>
-    </div>
+        <?php } ?>
 
+    </div>
 </div>
 </body>
 </html>

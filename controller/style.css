@@ -74,12 +74,14 @@ hr {
     display: flex;
     flex-direction: column;
     margin-bottom: 2px;
+    width:160px;
 }
 
 #registerbox {
     display: flex;
     flex-direction: column;
     margin-bottom: 2px;
+    width: 160px;
 }
 
 #usrnBox{margin-bottom:5px;}
