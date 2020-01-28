@@ -19,16 +19,19 @@
 
      <div class="navBar">
          <button class="userBtn"> Register </button>
-
+         <!-- Login button  -->
          <?php if($_SESSION["loggedIn"] == false){ ?>
          <button class="userBtn" > Login </button>
          <?php } ?>
 
+         <!-- Logout button  -->
          <?php if($_SESSION["loggedIn"] == true){ ?>
-             <button class="userBtn" onclick="window.location.href='../controller/logout.php'"> Logout </button>
+             <button class="userBtn" ><a href="../controller/logout.php">Logout</a></button>
          <?php } ?>
+
+         <!-- New Post button  -->
          <?php if($_SESSION["loggedIn"] == true){ ?>
-             <button class="userBtn" ><a href="newPost.php">New Post</a> </button>
+             <button class="userBtn" ><a href="../controller/newPost.php">New Post</a> </button>
          <?php } ?>
      </div>
     </div>
