@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="storePost.php" method="get">
+<form action="storePost.php" method="post">
     <input type="hidden" name="id" id="id">
     <label for="description">Header:</label>
     <input type="text" name="description" id="description" required>
