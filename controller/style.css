@@ -50,23 +50,26 @@ hr {
     flex-direction: row;
     justify-content: center;
     background-color: #323f4a;
+    padding: 10px;
 }
 
-.userFormRegister, .userFormLogin{
+.userForm{
     display: flex;
     justify-content: center;
     padding: 10px;
     background-color: #0D2C40;
+    margin-right:10px ;
 }
 
-/*#loginbox {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin: 10px;*/
-/*}*/
+#loginbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
 
-/*#registerbox {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin: 10px;*/
-/*}*/
+#registerbox {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 10px 12px 10px 8px;
+}
