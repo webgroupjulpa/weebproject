@@ -20,7 +20,10 @@
      <div class="navBar">
          <a class="userBtn"> Register </a>
          <a class="userBtn"> Login </a>
+<!--         --><?php //if($_SESSION["loggedIn"] = true){ ?>
          <a class="userBtn" href="../controller/logout.php"> Logout </a>
+<!--         --><?php //}
+         var_dump($_SESSION["username"])?>
      </div>
     </div>
 <!------------------------HEADER end------------------------->
@@ -29,7 +32,7 @@
 
      <div class="userFormLogin">
 <?php
-if ($_SESSION["loggedIn"] == null or false){?>
+if ($_SESSION["loggedIn"] == true){?>
         <form id="loginbox" action="login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -47,7 +50,7 @@ if ($_SESSION["loggedIn"] == null or false){?>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <input type="submit" value="submit">
+            <input type="submit" value="register">
         </form>
      </div>
     </div>

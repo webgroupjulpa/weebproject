@@ -57,6 +57,7 @@ function login($data)
 
     if (password_verify($password, $hashed["password"])=== true) {
         $_SESSION["loggedIn"] = true;
+        $_SESSION["username"] = $username;
         header("Location:/");
     } else {
    echo "Wrong username or Password!";

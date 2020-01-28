@@ -59,14 +59,14 @@ hr {
     background-color: #0D2C40;
 }
 
-#loginbox {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
+/*#loginbox {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin: 10px;*/
+/*}*/
 
-#registerbox {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
+/*#registerbox {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin: 10px;*/
+/*}*/
