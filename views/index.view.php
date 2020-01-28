@@ -39,9 +39,9 @@
 
     <div class="userForms">
 
+        <?php
+        if ($_SESSION["loggedIn"] == false){?>
      <div class="userForm">
-<?php
-if ($_SESSION["loggedIn"] == false){?>
         <form id="loginbox" action="login.php" method="POST">
             <h3>Log in</h3>
             <label for="username">Username:</label>
@@ -50,10 +50,11 @@ if ($_SESSION["loggedIn"] == false){?>
             <input id="pwBox" type="password" id="password" name="password" required>
             <input id="submit" type="submit" value="Submit">
         </form>
-<?php } ?>
+        <?php } ?>
      </div>
-     <div class="userForm">
 
+
+     <div class="userForm">
         <form id="registerbox" action="../controller/storeUser.php" method="POST">
             <h3>Register</h3>
             <input type="hidden" id="id" name="id">

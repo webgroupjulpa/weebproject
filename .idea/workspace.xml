@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/controller/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1580248616753</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="ändrad">
+      <created>1580251088550</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1580251088550</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -162,10 +167,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580065817698" />
-    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580248616159">
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1580251087940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580248616159" />
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580251087940" />
     <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1580130263390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -178,9 +183,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="18" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580068135567" />
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580248619565">
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580251091253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580248619565" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580251091253" />
   </component>
 </project>
