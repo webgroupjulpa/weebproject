@@ -30,7 +30,7 @@ hr {
     display: flex;
 }
 
-.loginLink{
+.userBtn{
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -42,16 +42,21 @@ hr {
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
     background-color: #0D2C40;
     color: white;
-}  .loginLink:hover{background-color:#1c5478 }
+}  .userBtn:hover{background-color:#1c5478 }
 
 
-
-.userForm {
+.userForms{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
     background-color: #323f4a;
+}
+
+.userFormRegister, .userFormLogin{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #0D2C40;
 }
 
 #loginbox {
