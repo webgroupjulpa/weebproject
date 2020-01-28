@@ -18,14 +18,14 @@
      <h2>Zender - A forum for you</h2>
 
      <div class="navBar">
+         <!-- Login button  -->
+         <?php if($_SESSION["loggedIn"] == false){ ?>
+             <button class="userBtn" > Login </button>
+         <?php } ?>
+
          <!-- Register button  -->
          <?php if($_SESSION["loggedIn"] == false){ ?>
          <button class="userBtn"> Register </button>
-         <?php } ?>
-
-         <!-- Login button  -->
-         <?php if($_SESSION["loggedIn"] == false){ ?>
-         <button class="userBtn" > Login </button>
          <?php } ?>
 
          <!-- Logout button  -->
