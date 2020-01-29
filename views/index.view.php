@@ -75,13 +75,20 @@
         <?php } ?>
 
     </div>
+    <?php
+    if ($_SESSION["loggedIn"] == true) { ?>
+    <div class="posts">
     <?php foreach ($posts as $post){?>
+        <div class="post">
+    <h3><?=$post["user"] ?></h3>
     <p><?=$post["description"] ?></p>
     <p><?=$post["content"] ?></p>
     <p><?=$post["dates"] ?></p>
-    <p><?=$post["user"] ?></p>
-    <p></p>
+        </div>
     <?php } ?>
+    </div>
+    <?php } ?>
+
 
 </div>
 </body>
