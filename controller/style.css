@@ -14,14 +14,19 @@ h1 {
      color: white;
  }
 
+ p{
+     margin-top:-2px;
+ }
 
 
-hr {
+#headline {
     width: 60px;
     height: 1px;
     margin-top: -8px;
     background-color: white;
 }
+
+
 
 .wrapper{width: 1366px;}
 
@@ -63,7 +68,7 @@ hr {
 
 .userForm{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
     background-color: #0D2C40;
     margin-right:10px ;
@@ -100,8 +105,11 @@ hr {
 
 .posts{
     display: flex;
+    justify-content:center;
     flex-wrap: wrap;
-    justify-content: center;
+    /*margin-left:-10px;*/
+    border: solid thin black;
+
 }
 
 .post{
@@ -110,5 +118,13 @@ hr {
     background-color: #516373;
     margin: 10px;
     padding:10px;
-    width: 200px;
+    width: 400px;
 }
+#postline{
+    color:gray;
+    width:218px;
+    margin-left:-10px;
+    margin-top:-10px;
+}
+
+#date{margin-bottom: -2px;}

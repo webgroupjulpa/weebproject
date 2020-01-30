@@ -14,7 +14,7 @@
     <!------------------------HEADER start------------------------->
     <div class="header">
         <h1>Zender</h1>
-        <hr>
+        <hr id="headline">
         <h2>"Send your thoughts and knowledge"</h2>
 
         <div class="navBar">
@@ -81,9 +81,10 @@
     <?php foreach ($posts as $post){?>
         <div class="post">
     <h3><?=$post["user"] ?></h3>
-    <p><?=$post["description"] ?></p>
+            <hr id="postline">
+    <h2><?=$post["description"] ?></h2>
     <p><?=$post["content"] ?></p>
-    <p><?=$post["dates"] ?></p>
+    <p id="date"><?=$post["dates"] ?></p>
         </div>
     <?php } ?>
     </div>
