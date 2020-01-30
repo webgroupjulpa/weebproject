@@ -80,3 +80,9 @@ function makePost($data){
     $success = runQuery($query);
     return $success;
 }
+function deletePost($data){
+    $id = $data["id"];
+    $sql = "delete from Posts where Id = '$id'";
+    $success = runQuery($sql);
+    return $success;
+}
