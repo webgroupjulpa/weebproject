@@ -87,13 +87,16 @@
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->
 
     <p id="date"><?=$post["dates"] ?></p>
+            <?php if($_SESSION["username"] === $post["user"]){ ?>
             <form action="../controller/deletePost.php" method="post" id="deletePost">
                 <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
                 <input type="submit" value="X">
             </form>
         </div>
     <?php } ?>
+
     </div>
+        <?php } ?>
     <?php } ?>
 
 
