@@ -139,5 +139,7 @@ h1 {
     /*margin-left:-10px;*/
     margin-top:-10px;
 }
-
 #date{margin-bottom: -2px;}
+
+.postbuttons{}
+#deletePost{}

@@ -1,6 +1,9 @@
 <?php
 session_start();
 date_default_timezone_set("Europe/Stockholm");
+/**
+ * @return PDO
+ */
 function connect()
 {
     try {
@@ -15,6 +18,10 @@ function connect()
     }
 }
 
+/**
+ * @param fetchAll $query
+ * @return array
+ */
 function fetchAll($query)
 {
     $db = connect();
@@ -24,6 +31,10 @@ function fetchAll($query)
     return $results;
 }
 
+/**
+ * @param  fetch $query
+ * @return mixed
+ */
 function fetch($query)
 {
     $db = connect();
@@ -39,6 +50,12 @@ function runQuery($query)
     $stmt = $db->prepare($query);
     return $stmt->execute();
 }
+
+/**
+ * @param user registration
+ * @param $data
+ * @return array
+ */
 function storeUser($data)
 {
     $result = fetch("select MAX(id) from login");
@@ -53,6 +70,10 @@ function storeUser($data)
     return fetchAll($query);
 }
 
+/**
+ * user login
+ * @param $data
+ */
 function login($data)
 {
     $username = $data["user"];
@@ -68,7 +89,8 @@ function login($data)
    echo "Wrong username or Password!";
     }
 }
-function makePost($data){
+
+function createPost($data){
     $user = $_SESSION["user"];
     $date = date("H:i d-m-Y")?? null;
     $result = fetch("select MAX(id) from posts");
@@ -79,6 +101,7 @@ function makePost($data){
     $success = runQuery($query);
     return $success;
 }
+
 function deletePost($data){
     $id = $data["id"];
     $sql = "delete from Posts where Id = '$id'";

@@ -1,6 +1,6 @@
 <?php
 require "../db/db.php";
 if (isset($_POST['btnNewPost'])){
-makePost($_POST);
+createPost($_POST);
 }
 header("location:index.php");
