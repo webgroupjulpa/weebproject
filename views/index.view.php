@@ -80,15 +80,19 @@
     <div class="posts">
     <?php foreach ($posts as $post){?>
         <div class="post">
-    <h3><?=$post["user"] ?></h3>
+
+      <div class="postheader">
+          <p id="postedBy">posted by:</p>
+          <h3><?=$post["user"] ?></h3>
+      </div>
             <hr id="postline">
     <h2><?=$post["description"] ?></h2>
-    <p><?=$post["content"] ?></p>
+    <p id="posttext"><?=$post["content"] ?></p>
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->
 
-    <p id="date"><?=$post["dates"] ?></p>
-            <?php if($_SESSION["user"] === $post["user"]){ ?>
             <div class="postbuttons">
+            <p id="date"><?=$post["dates"] ?></p>
+            <?php if($_SESSION["user"] === $post["user"]){ ?>
 
                 <form action="../controller/editPost.php" method="post" id="editPost">
                     <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
@@ -100,10 +104,8 @@
                 <input class="deletePost" type="submit" value="X">
             </form>
 
-
-            </div>
-
     <?php } ?>
+            </div>
         </div>
         <?php } ?>
     </div>
