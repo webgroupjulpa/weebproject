@@ -22,7 +22,6 @@
             <?php if ($_SESSION["loggedIn"] == false) { ?>
                 <button class="userBtn"> Login</button>
             <?php } ?>
-
             <!-- Register button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
                 <button class="userBtn"> Register</button>
@@ -49,8 +48,8 @@
             <div class="userForm">
                 <form id="loginbox" action="login.php" method="POST">
                     <h3>Log in</h3>
-                    <label for="username">Username:</label>
-                    <input id="usrnBox" type="text" id="username" name="username" required>
+                    <label for="user">Username:</label>
+                    <input id="usrnBox" type="text" id="user" name="user" required>
                     <label for="password">Password:</label>
                     <input id="pwBox" type="password" id="password" name="password" required>
                     <input id="submit" type="submit" value="Submit">
@@ -65,8 +64,8 @@
                 <form id="registerbox" action="../controller/storeUser.php" method="POST">
                     <h3>Register</h3>
                     <input type="hidden" id="id" name="id">
-                    <label for="username">Username:</label>
-                    <input id="usrnBox" type="text" id="username" name="username" required>
+                    <label for="user">Username:</label>
+                    <input id="usrnBox" type="text" id="user" name="user" required>
                     <label for="password">Password:</label>
                     <input id="pwBox" type="password" id="password" name="password" required>
                     <input id="submit" type="submit" value="Submit">
@@ -87,11 +86,16 @@
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->
 
     <p id="date"><?=$post["dates"] ?></p>
-            <?php if($_SESSION["username"] === $post["user"]){ ?>
+            <?php if($_SESSION["user"] === $post["user"]){ ?>
             <form action="../controller/deletePost.php" method="post" id="deletePost">
                 <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
                 <input type="submit" value="X">
             </form>
+
+                <form action="../controller/editPost.php" method="post" id="editPost">
+                    <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
+                    <input type="submit" value="Edit">
+                </form>
         </div>
     <?php } ?>
 

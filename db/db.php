@@ -27,7 +27,6 @@ function fetchAll($query)
 function fetch($query)
 {
     $db = connect();
-    var_dump($query);
     $stmt = $db->prepare($query);
     $stmt->execute();
     $results = $stmt->fetch();
@@ -56,21 +55,21 @@ function storeUser($data)
 
 function login($data)
 {
-    $username = $data["username"];
+    $username = $data["user"];
     $password = $data["password"];
     $query = "select password from login where username = '$username'";
     $hashed = fetch($query);
 
     if (password_verify($password, $hashed["password"])=== true) {
         $_SESSION["loggedIn"] = true;
-        $_SESSION["username"] = $username;
+        $_SESSION["user"] = $username;
         header("Location:/");
     } else {
    echo "Wrong username or Password!";
     }
 }
 function makePost($data){
-    $user = $_SESSION["username"];
+    $user = $_SESSION["user"];
     $date = date("H:i d-m-Y")?? null;
     $result = fetch("select MAX(id) from posts");
     $description = $data["description"];
@@ -84,5 +83,17 @@ function deletePost($data){
     $id = $data["id"];
     $sql = "delete from Posts where Id = '$id'";
     $success = runQuery($sql);
+    return $success;
+}
+
+function storeEdit($data){
+    $description = $data["description"]?? null;
+    $content = $data["content"]?? null;
+    $user = $_SESSION["user"]?? null;
+    $date = date("H:i d-m-Y")?? null;
+    $id = $data["id"];
+    $int=(int)$id;
+    $sql = "update posts set dates='$date', description= '$description',content='$content',user='$user' where id = $int";
+    $success = fetch($sql);
     return $success;
 }
