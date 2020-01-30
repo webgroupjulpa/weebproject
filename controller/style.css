@@ -18,6 +18,12 @@ h1 {
      margin-top:-2px;
  }
 
+@media only screen and (max-width: 1232px){ .posts{width: 970px;} }
+@media only screen and (max-width: 970px){ .posts{width: 728px;} }
+@media only screen and (max-width: 728px){ .posts{width: 486px;} }
+@media only screen and (max-width: 486px){ .posts{width: 244px;} }
+
+
 
 #headline {
     width: 60px;
@@ -25,8 +31,6 @@ h1 {
     margin-top: -8px;
     background-color: white;
 }
-
-
 
 .wrapper{
     width: 1366px;
@@ -114,17 +118,16 @@ h1 {
 }
 
 .posts{
-
     display: flex;
     /*justify-content: center;*/
     flex-wrap: wrap;
     /*margin-left:-10px;*/
     border: solid thin black;
-
 }
 
+
 .post{
-    border: solid thin greenyellow;
+    /*border: solid thin greenyellow;*/
     display: flex;
     flex-direction: column;
     background-color: #516373;
@@ -141,5 +144,30 @@ h1 {
 }
 #date{margin-bottom: -2px;}
 
-.postbuttons{}
-#deletePost{}
+.postbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.deletePost{
+    border: 0;
+    margin-left: 5px;
+    padding: 4px;
+    width: 25px;
+    font-size: 14px;
+    box-shadow: rgba(0,0,0,0.6) 1px 1px 5px;
+    background-color: #73020C;
+    color: white;
+}  .deletePost:hover{background-color:#73020C }
+
+
+.editPost{
+    border: 0;
+    margin-left: 5px;
+    padding: 4px;
+    font-size: 14px;
+    box-shadow: rgba(0,0,0,0.6) 1px 1px 5px;
+    background-color: #0D2C40;
+    color: white;
+}  .editPost:hover{background-color:#1c5478 }

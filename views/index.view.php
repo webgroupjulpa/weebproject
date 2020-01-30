@@ -89,19 +89,22 @@
     <p id="date"><?=$post["dates"] ?></p>
             <?php if($_SESSION["user"] === $post["user"]){ ?>
             <div class="postbuttons">
-            <form action="../controller/deletePost.php" method="post" id="deletePost">
-                <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
-                <input id="deletePost" type="submit" value="X">
-            </form>
 
                 <form action="../controller/editPost.php" method="post" id="editPost">
                     <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
-                    <input id="editPost" type="submit" value="Edit">
+                    <input class="editPost" type="submit" value="Edit">
                 </form>
-            </div>
-        </div>
-    <?php } ?>
 
+            <form action="../controller/deletePost.php" method="post" id="deletePost">
+                <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
+                <input class="deletePost" type="submit" value="X">
+            </form>
+
+
+            </div>
+
+    <?php } ?>
+        </div>
         <?php } ?>
     </div>
     </div>
