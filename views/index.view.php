@@ -88,15 +88,17 @@
 
     <p id="date"><?=$post["dates"] ?></p>
             <?php if($_SESSION["user"] === $post["user"]){ ?>
+            <div class="postbuttons">
             <form action="../controller/deletePost.php" method="post" id="deletePost">
                 <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
-                <input type="submit" value="X">
+                <input class="deletePost" type="submit" value="X">
             </form>
 
                 <form action="../controller/editPost.php" method="post" id="editPost">
                     <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
-                    <input type="submit" value="Edit">
+                    <input class="editPost" type="submit" value="Edit">
                 </form>
+            </div>
         </div>
     <?php } ?>
 
