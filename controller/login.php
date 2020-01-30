@@ -1,4 +1,4 @@
 <?php
 require "../db/db.php";
 login($_POST);
-header("location:../controller/index.php");
+header("location:index.php");

@@ -28,13 +28,16 @@ h1 {
 
 
 
-.wrapper{width: 1366px;}
+.wrapper{
+    width: 1366px;
+}
 
 .header {
     background-color: rgb(81, 99, 115);
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
@@ -103,9 +106,17 @@ h1 {
 }  #submit:hover{background-color:#1c5478 }
 
 
-.posts{
+.postwrapper{
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    border: solid thin red;
+    padding: 1px;
+}
+
+.posts{
+
+    display: flex;
+    /*justify-content: center;*/
     flex-wrap: wrap;
     /*margin-left:-10px;*/
     border: solid thin black;
@@ -113,17 +124,19 @@ h1 {
 }
 
 .post{
+    border: solid thin greenyellow;
     display: flex;
     flex-direction: column;
     background-color: #516373;
     margin: 10px;
     padding:10px;
-    width: 400px;
+    /*width: 300px;*/
 }
+
 #postline{
     color:gray;
-    width:218px;
-    margin-left:-10px;
+    width:200px;
+    /*margin-left:-10px;*/
     margin-top:-10px;
 }
 

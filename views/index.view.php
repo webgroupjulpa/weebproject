@@ -76,6 +76,7 @@
     </div>
     <?php
     if ($_SESSION["loggedIn"] == true) { ?>
+    <div class="postwrapper">
     <div class="posts">
     <?php foreach ($posts as $post){?>
         <div class="post">
@@ -99,8 +100,10 @@
         </div>
     <?php } ?>
 
-    </div>
+
         <?php } ?>
+    </div>
+    </div>
     <?php } ?>
 
 
