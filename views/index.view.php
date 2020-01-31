@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="../controller/style.css">
     <title>Zender</title>
 </head>
+
 <body>
+<script>
+    function hideDiv() {
+        const x = document.getElementById("userForm");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 <div class="wrapper">
     <!------------------------HEADER start------------------------->
@@ -20,7 +31,7 @@
         <div class="navBar">
             <!-- Login button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
-                <button class="userBtn"> Login</button>
+                <button class="userBtn" onclick="hideDiv()"> Login</button>
             <?php } ?>
             <!-- Register button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
