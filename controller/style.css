@@ -115,6 +115,20 @@ h1 {
 #submit:hover{background-color:#1c5478 }
 #submit:active{background-color:#2a77a8 }
 
+#searchword{
+    padding: 5px;
+}
+
+#btnSearch{
+    padding: 7px;
+    border: 0;
+    font-size: 14px;
+    /*width: 80px;*/
+    text-decoration: none;
+    box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
+    background-color: #0D2C40;;
+    color: white;
+}
 
 .postwrapper{
     display: flex;

@@ -35,10 +35,8 @@
         <h1>Zender</h1>
         <hr id="headline">
         <h2>"Send your thoughts and knowledge"</h2>
-        <form action="../controller/index.php" method="post">
-            <input type="text" id="searchword" name="searchword">
-            <input type="submit" id="btnSearch" name="btnSearch">
-        </form>
+
+
 
         <div class="navBar">
             <!-- Login button  -->
@@ -59,11 +57,21 @@
             <?php if ($_SESSION["loggedIn"] == true) { ?>
                 <button class="userBtn"><a href="../controller/newPost.php">New Post</a></button>
             <?php } ?>
+
         </div>
     </div>
     <!------------------------HEADER end------------------------->
 
     <div class="userForms" >
+
+        <?php
+        if ($_SESSION["loggedIn"] == true) {
+            ?>
+        <form action="../controller/index.php" method="post">
+            <input type="text" id="searchword" name="searchword">
+            <input type="submit" id="btnSearch" name="btnSearch" value="Search">
+        </form>
+        <?php } ?>
 
         <?php
         if ($_SESSION["loggedIn"] == false) {
