@@ -111,8 +111,9 @@ h1 {
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
     background-color: #516373;
     color: white;
-}  #submit:hover{background-color:#1c5478 }
-   #submit:active{background-color:#2a77a8 }
+}
+#submit:hover{background-color:#1c5478 }
+#submit:active{background-color:#2a77a8 }
 
 
 .postwrapper{

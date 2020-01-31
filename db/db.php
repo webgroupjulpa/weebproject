@@ -19,7 +19,8 @@ function connect()
 }
 
 /**
- * @param fetchAll $query
+ * fetchAll
+ * @param  $query
  * @return array
  */
 function fetchAll($query)
@@ -32,7 +33,8 @@ function fetchAll($query)
 }
 
 /**
- * @param  fetch $query
+ * fetch
+ * @param $query
  * @return mixed
  */
 function fetch($query)
@@ -118,5 +120,11 @@ function storeEdit($data){
     $int=(int)$id;
     $sql = "update posts set dates='$date', description= '$description',content='$content',user='$user' where id = $int";
     $success = fetch($sql);
+    return $success;
+}
+function search($data){
+    $searchword = $data["searchword"];
+    $query ="select * from posts where description or content like '%$searchword%'";
+    $success = fetchAll($query);
     return $success;
 }
