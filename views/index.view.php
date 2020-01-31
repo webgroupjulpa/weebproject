@@ -11,8 +11,16 @@
 
 <body>
 <script>
-    function hideDiv() {
-        const x = document.getElementById("userForm");
+    function hideDivLogin() {
+        const x = document.getElementById("loginForm");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function hideDivRegister() {
+        const x = document.getElementById("registerForm");
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -31,11 +39,11 @@
         <div class="navBar">
             <!-- Login button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
-                <button class="userBtn" onclick="hideDiv()"> Login</button>
+                <button class="userBtn" onclick="hideDivLogin()"> Login</button>
             <?php } ?>
             <!-- Register button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
-                <button class="userBtn"> Register</button>
+                <button class="userBtn" onclick="hideDivRegister()"> Register</button>
             <?php } ?>
 
             <!-- Logout button  -->
@@ -51,12 +59,12 @@
     </div>
     <!------------------------HEADER end------------------------->
 
-    <div class="userForms">
+    <div class="userForms" >
 
         <?php
         if ($_SESSION["loggedIn"] == false) {
             ?>
-            <div class="userForm">
+            <div class="userForm" id="loginForm">
                 <form id="loginbox" action="login.php" method="POST">
                     <h3>Log in</h3>
                     <label for="user">Username:</label>
@@ -71,7 +79,7 @@
         <?php
         if ($_SESSION["loggedIn"] == false) {
             ?>
-            <div class="userForm">
+            <div class="userForm" id="registerForm">
                 <form id="registerbox" action="../controller/storeUser.php" method="POST">
                     <h3>Register</h3>
                     <input type="hidden" id="id" name="id">
