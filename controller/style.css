@@ -66,6 +66,7 @@ h1 {
     background-color: #0D2C40;
     color: white;
 }  .userBtn:hover{background-color:#1c5478 }
+   .userBtn:active{background-color:#2978ab }
 
 
 .userForms{
@@ -81,7 +82,7 @@ h1 {
     justify-content: space-evenly;
     padding: 10px;
     background-color: #0D2C40;
-    margin-right:10px ;
+    margin:5px ;
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
 }
 
@@ -111,6 +112,7 @@ h1 {
     background-color: #516373;
     color: white;
 }  #submit:hover{background-color:#1c5478 }
+   #submit:active{background-color:#2a77a8 }
 
 
 .postwrapper{

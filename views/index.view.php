@@ -39,7 +39,7 @@
         <div class="navBar">
             <!-- Login button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
-                <button class="userBtn" onclick="hideDivLogin()"> Login</button>
+                <button class="userBtn" onclick="hideDivLogin()"> Sign in</button>
             <?php } ?>
             <!-- Register button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
@@ -66,7 +66,7 @@
             ?>
             <div class="userForm" id="loginForm">
                 <form id="loginbox" action="login.php" method="POST">
-                    <h3>Log in</h3>
+                    <h3>Sign in</h3>
                     <label for="user">Username:</label>
                     <input id="usrnBox" type="text" id="user" name="user" required>
                     <label for="password">Password:</label>
