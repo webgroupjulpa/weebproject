@@ -117,7 +117,7 @@
           <p id="postedBy">posted by:</p>
           <h3><?=$post["user"] ?></h3>
       </div>
-<!--            <hr id="postline">-->
+
     <h2><?=$post["description"] ?></h2>
     <p id="posttext"><?=$post["content"] ?></p>
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->

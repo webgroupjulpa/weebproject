@@ -129,14 +129,14 @@ h1 {
     /*width: 80px;*/
     text-decoration: none;
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
-    background-color: #0D2C40;;
+    background-color: #0D2C40;
     color: white;
 }
 
 .postwrapper{
     display: flex;
     justify-content: center;
-    border: solid thin red;
+    /*border: solid thin red;*/
     padding: 1px;
 }
 
@@ -146,7 +146,7 @@ h1 {
     /*justify-content: center;*/
     flex-wrap: wrap;
     /*margin-left:-10px;*/
-    border: solid thin black;
+    /*border: solid thin black;*/
 }
 
 
@@ -155,9 +155,9 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #516373;
+    box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
     margin: 5px;
     padding:10px;
-    /*max-width: 200px;*/
 }
 
 #postedBy{
@@ -172,18 +172,9 @@ h1 {
     margin: -10px;
     padding-left: 10px;
     height: 45px;
-    border: solid thin gray;
-
+    border-bottom: solid thin #36434f;
 }
 
-
-#postline{
-    display: flex;
-    color:gray;
-    width:440px;
-    margin-left:-10px;
-    margin-top:-10px;
-}
 
 #posttext{margin-top:-10px;}
 
