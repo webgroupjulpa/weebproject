@@ -122,6 +122,7 @@ function storeEdit($data){
     $success = fetch($sql);
     return $success;
 }
+
 function search($data){
     $searchword = $data["searchword"];
     $query ="select * from posts where description or content like '%$searchword%'";

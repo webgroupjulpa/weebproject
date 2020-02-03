@@ -78,13 +78,16 @@ h1 {
 }
 
 .userForm{
-    display: flex;
     justify-content: space-evenly;
     padding: 10px;
     background-color: #0D2C40;
     margin:5px ;
     box-shadow: rgba(0,0,0,0.6) 2px 2px 5px;
 }
+
+#loginForm{display: none}
+#registerForm{display: none}
+
 
 #loginbox {
     display: flex;
@@ -139,6 +142,7 @@ h1 {
 
 .posts{
     display: flex;
+    flex-direction: column;
     /*justify-content: center;*/
     flex-wrap: wrap;
     /*margin-left:-10px;*/
@@ -151,9 +155,9 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #516373;
-    margin: 10px;
+    margin: 5px;
     padding:10px;
-    max-width: 200px;
+    /*max-width: 200px;*/
 }
 
 #postedBy{
@@ -165,13 +169,19 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin: -10px;
+    padding-left: 10px;
+    height: 45px;
+    border: solid thin gray;
+
 }
 
 
 #postline{
+    display: flex;
     color:gray;
-    width:200px;
-    /*margin-left:-10px;*/
+    width:440px;
+    margin-left:-10px;
     margin-top:-10px;
 }
 
@@ -184,6 +194,7 @@ h1 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: baseline;
+    margin-top:-15px;
 }
 
 .deletePost{

@@ -11,20 +11,21 @@
 
 <body>
 <script>
+
     function hideDivLogin() {
         const x = document.getElementById("loginForm");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
+        if (x.style.display === "flex") {
             x.style.display = "none";
+        } else {
+            x.style.display = "flex";
         }
     }
     function hideDivRegister() {
         const x = document.getElementById("registerForm");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
+        if (x.style.display === "flex") {
             x.style.display = "none";
+        } else {
+            x.style.display = "flex";
         }
     }
 </script>
@@ -95,8 +96,8 @@
                 <form id="registerbox" action="../controller/storeUser.php" method="POST">
                     <h3>Register</h3>
                     <input type="hidden" id="id" name="id">
-                    <label for="user">Username:</label>
-                    <input id="usrnBox" type="text" id="user" name="user" required>
+                    <label for="username">Username:</label>
+                    <input id="usrnBox" type="text" id="username" name="username" required>
                     <label for="password">Password:</label>
                     <input id="pwBox" type="password" id="password" name="password" required>
                     <input id="submit" type="submit" value="Submit">
@@ -116,7 +117,7 @@
           <p id="postedBy">posted by:</p>
           <h3><?=$post["user"] ?></h3>
       </div>
-            <hr id="postline">
+<!--            <hr id="postline">-->
     <h2><?=$post["description"] ?></h2>
     <p id="posttext"><?=$post["content"] ?></p>
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->
