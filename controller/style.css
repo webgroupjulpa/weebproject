@@ -68,6 +68,11 @@ h1 {
 }  .userBtn:hover{background-color:#1c5478 }
    .userBtn:active{background-color:#2978ab }
 
+#loggedInUser {
+    margin-top: 10px;
+    margin-bottom:-10px;
+    color:darkseagreen;
+}
 
 .userForms{
     display: flex;

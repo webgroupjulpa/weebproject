@@ -59,7 +59,11 @@
                 <button class="userBtn"><a href="../controller/newPost.php">New Post</a></button>
             <?php } ?>
 
+
         </div>
+        <?php if ($_SESSION["loggedIn"] == true) { ?>
+        <p id="loggedInUser">Logged in as: <?=$_SESSION['user']?></p>
+        <?php } ?>
     </div>
     <!------------------------HEADER end------------------------->
 
@@ -68,6 +72,7 @@
         <?php
         if ($_SESSION["loggedIn"] == true) {
             ?>
+
         <form action="../controller/index.php" method="post">
             <input type="text" id="searchword" name="searchword">
             <input type="submit" id="btnSearch" name="btnSearch" value="Search">
