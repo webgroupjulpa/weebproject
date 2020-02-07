@@ -1,6 +1,7 @@
 <?php
-require "../db/db.php";
+require "../db/Database.php";
 if (isset($_POST['btnSubmitEdit'])){
-    storeEdit($_POST);
+    $post = new Database();
+    $post->storeEdit($_POST);
     header("location:/controller");
 }

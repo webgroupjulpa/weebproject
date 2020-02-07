@@ -1,6 +1,7 @@
 <?php
-require "../db/db.php";
+require "../db/Database.php";
 if (isset($_POST['btnNewPost'])){
-createPost($_POST);
+$d1 = new Database();
+$d1->createPost($_POST);
 }
 header("location:index.php");

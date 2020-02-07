@@ -1,4 +1,5 @@
 <?php
-require "../db/db.php";
-storeUser($_POST);
+require "../db/Database.php";
+$post = new Database();
+$post->storeUser($_POST);
 header("location:index.php");

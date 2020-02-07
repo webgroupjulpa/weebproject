@@ -9,9 +9,9 @@
 </head>
 <body>
 <form action="../controller/storeEdit.php" method="post">
-    <input type="text" id="description" name="description" value="<?=$edit['description']?>">
-    <textarea name="content" id="content"><?=$edit['content']?></textarea>
-    <input type="hidden" id="id" name="id" value="<?=$edit['id']?>">
+    <input type="text" id="description" name="description" value="<?=$edit->description?>">
+    <textarea name="content" id="content"><?=$edit->content?></textarea>
+    <input type="hidden" id="id" name="id" value="<?=$edit->id?>">
     <input type="submit" id="btnSubmitEdit" name="btnSubmitEdit" value="confirm edit">
 </form>
 

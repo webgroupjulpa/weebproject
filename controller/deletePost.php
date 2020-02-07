@@ -1,6 +1,7 @@
 <?php
-require "../db/db.php";
+require "../db/Database.php";
 if ($_SESSION["loggedIn"] = true){
-    deletePost($_POST);
+    $db= new Database();
+    $db->deletePost($_POST);
     header("location:index.php");
 }

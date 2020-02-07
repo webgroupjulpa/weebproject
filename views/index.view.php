@@ -109,29 +109,30 @@
     if ($_SESSION["loggedIn"] == true) { ?>
     <div class="postwrapper">
     <div class="posts">
-    <?php foreach ($posts as $post){?>
+    <?php foreach ($posts2 as $post)
+   { ?>
         <div class="post">
 
       <div class="postheader">
           <p id="postedBy">posted by:</p>
-          <h3><?=$post["user"] ?></h3>
+          <h3><?=$post->user ?></h3>
       </div>
             <hr id="postline">
-    <h2><?=$post["description"] ?></h2>
-    <p id="posttext"><?=$post["content"] ?></p>
+    <h2><?=$post->description ?></h2>
+    <p id="posttext"><?=$post->content ?></p>
 <!--    <p>--><?//=$post["id"] ?><!--</p>-->
 
             <div class="postbuttons">
-            <p id="date"><?=$post["dates"] ?></p>
-            <?php if($_SESSION["user"] === $post["user"]){ ?>
+            <p id="date"><?=$post->dates ?></p>
+            <?php if($_SESSION["user"] === $post->user){ ?>
 
                 <form action="../controller/editPost.php" method="post" id="editPost">
-                    <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
+                    <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
                     <input class="editPost" type="submit" value="Edit">
                 </form>
 
             <form action="../controller/deletePost.php" method="post" id="deletePost">
-                <input type="hidden" name="id" id="id" value="<?= $post["id"] ?>">
+                <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
                 <input class="deletePost" type="submit" value="X">
             </form>
 
