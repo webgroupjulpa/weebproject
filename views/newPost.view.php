@@ -15,7 +15,7 @@
     <input type="text" name="description" id="description" required>
     <label for="content">Content:</label>
     <textarea name="content" id="content"></textarea>
-    <input type="submit" value="create post!" name="btnNewPost">
+    <input type="submit" value="Submit" name="btnNewPost">
 </form>
 <script src="../tinymce/js/tinymce/tinymce.min.js"></script>
 <script src="../tiny.js"></script>
