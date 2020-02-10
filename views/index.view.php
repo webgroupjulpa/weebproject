@@ -63,7 +63,12 @@
     <!------------------------HEADER end------------------------->
 
     <div class="userForms" >
+        <?php
+        if ($_SESSION["loggedIn"] == true) {
 
+
+            ?>
+       <p>Du är inloggad som <?=$_SESSION["user"]?></p>
         <?php
         if ($_SESSION["loggedIn"] == true) {
             ?>

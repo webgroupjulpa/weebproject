@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/deletePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/deletePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/editPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/editPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/storeEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/storeEdit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/storePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/storePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/storeUser.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -127,6 +111,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/storeEdit.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,7 +153,6 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/controller/newPost.php" />
         <option value="$PROJECT_DIR$/controller/register.php" />
-        <option value="$PROJECT_DIR$/views/index.view.php" />
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/views/editPost.view.php" />
         <option value="$PROJECT_DIR$/db/Database.php" />
@@ -170,6 +162,7 @@
         <option value="$PROJECT_DIR$/controller/index.php" />
         <option value="$PROJECT_DIR$/controller/storeEdit.php" />
         <option value="$PROJECT_DIR$/controller/storePost.php" />
+        <option value="$PROJECT_DIR$/views/index.view.php" />
       </list>
     </option>
   </component>
@@ -393,7 +386,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20130000" />
+    <option name="totallyTimeSpent" value="20857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -614,6 +600,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
         </state>
       </provider>
     </entry>
