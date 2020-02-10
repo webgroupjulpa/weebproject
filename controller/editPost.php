@@ -1,6 +1,6 @@
 <?php
 require"../db/Database.php";
-$db = new Database();
+$db = new Post();
 $id=$_POST['id'];
 $user = $db->fetch("Select user from Posts where id = '$id'");
 if($user == $_SESSION["username"] = true){

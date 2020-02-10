@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 class Database
 {
 
@@ -20,96 +21,71 @@ class Database
         }
     }
 
-    public function fetchAll($query)
+    public function fetchAll($query, array $params = [])
     {
         $stmt = $this->db->prepare($query);
+        foreach ($params as $key => $param) {
+            $stmt->bindValue($key, $param);
+        }
         $stmt->execute();
         $results = $stmt->fetchAll();
         return $results;
     }
 
-    public function fetch($query)
+    public function fetch($query, array $params = [])
     {
         $stmt = $this->db->prepare($query);
+        foreach ($params as $key => $param) {
+            $stmt->bindValue($key, $param);
+        }
         $stmt->execute();
         $results = $stmt->fetch();
         return $results;
     }
 
-    public function runQuery($query)
+    public function runQuery($query, array $params = [])
     {
+
         $stmt = $this->db->prepare($query);
+        foreach ($params as $key => $param) {
+            $stmt->bindValue($key, $param);
+        }
         return $stmt->execute();
+
     }
 
     public function storeUser($data)
     {
-        $result = fetch("select MAX(id) as id from login");
-        $id = $result->id + 1;
-        $username = $data->username;
+        $result = $this->fetch("select MAX(id) from login");
+        $id = $result->{'MAX(id)'} + 1;
+        $username = $data["user"];
         $password = password_hash($data["password"] ?? null, PASSWORD_DEFAULT);
         $query = "insert into login values(
-                          $id,
-                         '$username',
-                         '$password'
+                          :id,
+                         :username,
+                         :password
     );";
-        return fetchAll($query);
+        return $this->fetchAll($query, ["id" => $id, "username" => $username, "password" => $password]);
     }
 
     public function login($data)
     {
         $username = $data["user"];
         $password = $data["password"];
-        $query = "select password from login where username = '$username'";
-        $hashed = $this->fetch($query);
+        $query = "select password from login where username = :username";
+        $hashed = $this->fetch($query, ["username" => $username]);
 
         if (password_verify($password, $hashed->password) === true) {
             $_SESSION["loggedIn"] = true;
             $_SESSION["user"] = $username;
             header("Location:index.php");
-            var_dump($_SESSION);
         } else {
             echo "Wrong username or Password!";
         }
 
     }
-    public function createPost($data){
-        $user = $_SESSION["user"];
-        $date = date("H:i d-m-Y")?? null;
-        $result = $this->fetch("select MAX(id) from posts");
-        $description = $data["description"];
-        $content = $data["content"];
-        var_dump($result);
-        $id = $result-> {'MAX(id)'} +1;
-        $query = "insert into posts values($id,'$date','$description','$content','$user');";
-        $success = $this->runQuery($query);
-        return $success;
-    }
-    public function deletePost($data){
-        $id = $data["id"];
-        $sql = "delete from Posts where Id = '$id'";
-        $success = $this->runQuery($sql);
-        return $success;
-    }
-    public function storeEdit($data){
-        $description = $data["description"]?? null;
-        $content = $data["content"]?? null;
-        $user = $_SESSION["user"]?? null;
-        $date = date("H:i d-m-Y")?? null;
-        $id = $data["id"];
-        $int=(int)$id;
-        $sql = "update posts set dates='$date', description= '$description',content='$content',user='$user' where id = $int";
-        $success = $this->fetch($sql);
-        return $success;
-    }
-    public function search($data){
-        $searchword = $data["searchword"];
-        $query ="select * from posts where description or content like '%$searchword%'";
-        $success = $this->fetchAll($query);
-        return $success;
-    }
-
 }
+
 
 
 
