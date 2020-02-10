@@ -19,6 +19,7 @@
             x.style.display = "none";
         }
     }
+
     function hideDivRegister() {
         const x = document.getElementById("registerForm");
         if (x.style.display === "none") {
@@ -35,7 +36,6 @@
         <h1>Zender</h1>
         <hr id="headline">
         <h2>"Send your thoughts and knowledge"</h2>
-
 
 
         <div class="navBar">
@@ -62,20 +62,23 @@
     </div>
     <!------------------------HEADER end------------------------->
 
-    <div class="userForms" >
+    <div class="userForms">
         <?php
         if ($_SESSION["loggedIn"] == true) {
 
 
             ?>
-       <p>Du är inloggad som <?=$_SESSION["user"]?></p>
+            <div>
+                <p>Du är inloggad som: <?= $_SESSION["user"] ?></p>
+            </div>
+        <?php } ?>
         <?php
         if ($_SESSION["loggedIn"] == true) {
             ?>
-        <form action="../controller/index.php" method="post">
-            <input type="text" id="searchword" name="searchword">
-            <input type="submit" id="btnSearch" name="btnSearch" value="Search">
-        </form>
+            <form action="../controller/index.php" method="post">
+                <input type="text" id="searchword" name="searchword">
+                <input type="submit" id="btnSearch" name="btnSearch" value="Search">
+            </form>
         <?php } ?>
 
         <?php
@@ -112,41 +115,41 @@
     </div>
     <?php
     if ($_SESSION["loggedIn"] == true) { ?>
-    <div class="postwrapper">
-    <div class="posts">
-    <?php foreach ($posts2 as $post)
-   { ?>
-        <div class="post">
+        <div class="postwrapper">
+            <div class="posts">
+                <?php foreach ($posts2 as $post) { ?>
+                    <div class="post">
 
-      <div class="postheader">
-          <p id="postedBy">posted by:</p>
-          <h3><?=$post->user ?></h3>
-      </div>
-            <hr id="postline">
-    <h2><?=$post->description ?></h2>
-    <p id="posttext"><?=$post->content ?></p>
-<!--    <p>--><?//=$post["id"] ?><!--</p>-->
+                        <div class="postheader">
+                            <p id="postedBy">posted by:</p>
+                            <h3><?= $post->user ?></h3>
+                        </div>
+                        <hr id="postline">
+                        <h2><?= $post->description ?></h2>
+                        <p id="posttext"><?= $post->content ?></p>
+                        <!--    <p>--><? //=$post["id"]
+                        ?><!--</p>-->
 
-            <div class="postbuttons">
-            <p id="date"><?=$post->dates ?></p>
-            <?php if($_SESSION["user"] === $post->user){ ?>
+                        <div class="postbuttons">
+                            <p id="date"><?= $post->dates ?></p>
+                            <?php if ($_SESSION["user"] === $post->user) { ?>
 
-                <form action="../controller/editPost.php" method="post" id="editPost">
-                    <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
-                    <input class="editPost" type="submit" value="Edit">
-                </form>
+                                <form action="../controller/editPost.php" method="post" id="editPost">
+                                    <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
+                                    <input class="editPost" type="submit" value="Edit">
+                                </form>
 
-            <form action="../controller/deletePost.php" method="post" id="deletePost">
-                <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
-                <input class="deletePost" type="submit" value="X">
-            </form>
+                                <form action="../controller/deletePost.php" method="post" id="deletePost">
+                                    <input type="hidden" name="id" id="id" value="<?= $post->id ?>">
+                                    <input class="deletePost" type="submit" value="X">
+                                </form>
 
-    <?php } ?>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
-        <?php } ?>
-    </div>
-    </div>
     <?php } ?>
 
 
