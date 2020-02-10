@@ -1,5 +1,5 @@
 <?php
-require "../db/Database.php";
+require "../Post.php";
 if($_SESSION["loggedIn"] == false or null){
     $_SESSION["loggedIn"] = false;
 }

@@ -1,5 +1,5 @@
 <?php
-
+require_once "db/Database.php";
 
 class Post extends Database
 {
@@ -8,6 +8,7 @@ class Post extends Database
         $user = $_SESSION["user"];
         $date = date("H:i d-m-Y") ?? null;
         $result = $this->fetch("select MAX(id) from posts");
+        $content = $data["content"];
         $description = $data["description"];
         $id = $result->{'MAX(id)'} + 1;
         $query = "insert into posts values(:id,:date,:description,:content,:user);";

@@ -1,5 +1,5 @@
 <?php
-require "../db/Database.php";
+require "../Post.php";
 if (isset($_POST['btnNewPost'])){
 $d1 = new Post();
 $d1->createPost($_POST);

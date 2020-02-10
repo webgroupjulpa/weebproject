@@ -1,3 +1,3 @@
 <?php
-require "../db/Database.php";
+require "../Post.php";
 require "../views/newPost.view.php";

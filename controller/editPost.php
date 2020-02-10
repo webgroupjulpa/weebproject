@@ -1,5 +1,5 @@
 <?php
-require"../db/Database.php";
+require"../Post.php";
 $db = new Post();
 $id=$_POST['id'];
 $user = $db->fetch("Select user from Posts where id = '$id'");
