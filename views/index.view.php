@@ -59,19 +59,14 @@
             <?php } ?>
 
         </div>
+        <?php if ($_SESSION["loggedIn"] == true) { ?>
+            <p id="loggedInUser">Logged in as: <?=$_SESSION['user']?></p>
+        <?php } ?>
     </div>
     <!------------------------HEADER end------------------------->
 
     <div class="userForms">
-        <?php
-        if ($_SESSION["loggedIn"] == true) {
 
-
-            ?>
-            <div>
-                <p>Du är inloggad som: <?= $_SESSION["user"] ?></p>
-            </div>
-        <?php } ?>
         <?php
         if ($_SESSION["loggedIn"] == true) {
             ?>
