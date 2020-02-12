@@ -7,7 +7,9 @@ $posts2 = [];
 if(isset($_POST["btnSearch"])){
     $posts = new Post();
     $posts2 = $posts->search($_POST);
-}else{
+}else if ($_GET["btnSortByDate"]){
+    $posts = new Post();
+    $posts2 = $posts->fetchAll("select * from posts where 1 order by dates ");
     $posts = new Database();
     $posts2 = $posts->fetchAll("select * from posts");
 

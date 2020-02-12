@@ -43,5 +43,8 @@ class Post extends Database
         $success = $this->fetchAll($query ,["searchword" => $searchword]);
         return $success;
     }
+    public function sortBy(){
+
+    }
 
 }

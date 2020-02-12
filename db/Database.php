@@ -82,7 +82,6 @@ class Database
         } else {
             echo "Wrong username or Password!";
         }
-
     }
 }
 
