@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../controller/style.css">
     <title>Zender</title>
 </head>
-
 <body>
 <script>
     function hideDivLogin() {
@@ -22,6 +21,15 @@
 
     function hideDivRegister() {
         const x = document.getElementById("registerForm");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function hideDivSortBy() {
+        const x = document.getElementById("sortBy");
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -58,6 +66,7 @@
                 <button class="userBtn"><a href="../controller/newPost.php">New Post</a></button>
             <?php } ?>
 
+
         </div>
         <?php if ($_SESSION["loggedIn"] == true) { ?>
             <p id="loggedInUser">Logged in as: <?=$_SESSION['user']?></p>
@@ -70,11 +79,37 @@
         <?php
         if ($_SESSION["loggedIn"] == true) {
             ?>
+
             <form action="../controller/index.php" method="post">
                 <input type="text" id="searchword" name="searchword">
                 <input type="submit" id="btnSearch" name="btnSearch" value="Search">
             </form>
         <?php } ?>
+
+
+        <?php
+        if ($_SESSION["loggedIn"] == true) {
+            ?>
+            <button class="userBtn" id="btnSortBy" onclick="hideDivSortBy()"> Sort By</button>
+
+            <div class="search" id="sortBy">
+
+            <form action="../controller/index.php" method="post">
+
+                <label for="btnSortByDateASC">Newest:</label>
+                <input type="submit" id="btnSortByDateASC" name="btnSortByDateASC" value="X">
+            </form>
+
+            <form action="../controller/index.php" method="post">
+
+                <label for="btnSortByDateDESC">Oldest:</label>
+                <input type="submit" id="btnSortByDateDESC" name="btnSortByDateDESC" value="Y">
+            </form>
+
+            </div>
+        <?php } ?>
+
+
 
         <?php
         if ($_SESSION["loggedIn"] == false) {

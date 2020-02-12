@@ -8,10 +8,15 @@ if (isset($_POST["btnSearch"])) {
     $posts = new Post();
     $posts2 = $posts->search($_POST);
 }
-if (isset($_GET["btnSortByDate"])) {
+else if (isset($_POST["btnSortByDateASC"])) {
     $posts = new Post();
-    $posts2 = $posts->fetchAll("select * from posts where 1 order by dates ");
-} else {
+    $posts2 = $posts->fetchAll("select * from posts where 1 order by dates ASC");
+}
+else if (isset($_POST["btnSortByDateDESC"])) {
+    $posts = new Post();
+    $posts2 = $posts->fetchAll("select * from posts where 1 order by dates DESC");
+}
+else {
     $posts = new Database();
     $posts2 = $posts->fetchAll("select * from posts");
 
