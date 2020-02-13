@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +100,7 @@
       <workItem from="1580066536212" duration="39000" />
       <workItem from="1580235374632" duration="5481000" />
       <workItem from="1580375890731" duration="883000" />
+      <workItem from="1581584362062" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="jag commitade">
       <created>1580053201143</created>
@@ -256,14 +255,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580065817698" />
-    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1581346126954">
+    <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1581500706544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581346126954" />
-    <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1580376776860">
+    <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581500706544" />
+    <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1581584571029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580376776860" />
+    <state x="260" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581584571029" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1581346200876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -276,10 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="18" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580068135567" />
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581346270947">
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581500709102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581346270947" />
+    <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581500709102" />
     <state x="70" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1580401001313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
