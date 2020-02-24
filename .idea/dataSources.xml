@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="data.sqlite" uuid="bd029894-8285-4591-ab88-59b9452a816d">
+    <data-source source="LOCAL" name="data.sqlite" uuid="dcf77b2a-f02c-469a-9f0a-1f1291a9cfad">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="test.sqlite" uuid="bd029894-8285-4591-ab88-59b9452a816d">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
@@ -10,14 +19,17 @@
         <property name="enable_load_extension" value="true" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="test.sqlite" uuid="dcf77b2a-f02c-469a-9f0a-1f1291a9cfad">
+    <data-source source="LOCAL" name="test.sqlite" uuid="71975a03-56e3-41be-ae7d-4df8a28802a8">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite</jdbc-url>
-      <driver-properties>
-        <property name="enable_load_extension" value="true" />
-      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="databas.sqlite" uuid="07909ff0-7588-43b9-8ea0-2fe155eaba7e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/databas.sqlite</jdbc-url>
     </data-source>
   </component>
 </project>

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/test.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/databas.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -28,38 +27,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="data.sqlite" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="data.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="data.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="test.sqlite" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="test.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="test.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="Git.Settings">
@@ -114,7 +82,7 @@
       <workItem from="1582548848200" duration="1117000" />
       <workItem from="1582550634433" duration="246000" />
       <workItem from="1582551088778" duration="45000" />
-      <workItem from="1582551202542" duration="21000" />
+      <workItem from="1582551202542" duration="549000" />
     </task>
     <task id="LOCAL-00001" summary="jag commitade">
       <created>1580053201143</created>
@@ -263,12 +231,18 @@
   <component name="WindowStateProjectService">
     <state x="51" y="183" key="#SQL_Dialects" timestamp="1582551087299" />
     <state x="51" y="183" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582551755230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551755230" />
     <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582551087300" />
     <state x="247" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
     <state x="178" y="32" key="CommitChangelistDialog2" timestamp="1582551087300" />
     <state x="178" y="32" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
-    <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1582551087300" />
-    <state x="260" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
+    <state x="260" y="279" key="FileChooserDialogImpl" timestamp="1582551737684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582551737684" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1582551087300" />
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
     <state x="46" y="259" key="IDE.errors.dialog" timestamp="1582551087300" />
@@ -279,6 +253,22 @@
     <state x="18" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582551222622" />
     <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582551087300" />
     <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
+    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog" timestamp="1582551784293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551784293" />
+    <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1582551779809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551779809" />
+    <state x="751" y="333" width="418" height="369" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1582551609778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="333" width="418" height="369" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551609778" />
+    <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582551659137">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="157" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582551659137" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582551203084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
