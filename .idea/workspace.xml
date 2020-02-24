@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/databas.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/databas.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,6 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="18" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582551222622" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1582552442864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1582552442864" />
     <state x="147" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582551087300" />
     <state x="147" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582551087300" />
     <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog" timestamp="1582551784293">

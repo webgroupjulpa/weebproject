@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -49,7 +51,7 @@
         <div class="navBar">
             <!-- Login button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
-                <button class="userBtn" onclick="hideDivLogin()"> Sign in</button>
+                <button class="userBtn" onclick="hideDivLogin()">Sign in</button>
             <?php } ?>
             <!-- Register button  -->
             <?php if ($_SESSION["loggedIn"] == false) { ?>
