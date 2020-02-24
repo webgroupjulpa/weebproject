@@ -9,7 +9,7 @@ class Database
 
     public function __construct()
     {
-        $dsn = "sqlite:" . __DIR__ . "/data.sqlite";
+        $dsn = "sqlite:" . __DIR__ . "/databas.sqlite";
         try {
             $this->db = new PDO($dsn);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

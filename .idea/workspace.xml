@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db5ba77f-2b3f-49a7-a60f-d04537a2951b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/databas.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
       <workItem from="1582548848200" duration="1117000" />
       <workItem from="1582550634433" duration="246000" />
       <workItem from="1582551088778" duration="45000" />
-      <workItem from="1582551202542" duration="549000" />
+      <workItem from="1582551202542" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="jag commitade">
       <created>1580053201143</created>
