@@ -164,7 +164,7 @@
 
                         <div class="postbuttons">
                             <p id="date"><?= $post->dates ?></p>
-                            <?php if ($_SESSION["user"] === $post->user) { ?>
+                            <?php if ($_SESSION["user"] === $post->user or $_SESSION["user"] === "admin") { ?>
 
                                 <form action="../controller/editPost.php" method="post" id="editPost">
                                     <input type="hidden" name="id" id="id" value="<?= $post->id ?>">

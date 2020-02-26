@@ -7,6 +7,7 @@ $posts2 = [];
 if (isset($_POST["btnSearch"])) {
     $posts = new Post();
     $posts2 = $posts->search($_POST);
+
 }
 else if (isset($_POST["btnSortByDateASC"])) {
     $posts = new Post();
